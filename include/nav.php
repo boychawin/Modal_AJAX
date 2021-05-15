@@ -18,7 +18,7 @@
 
 
 					<li class="nav-item">
-						<a class="nav-link alert-success" role="alert"" href="logout.php">ยินดีตอนรับ <?php if (isset($user['firstname'])) {
+						<a class="nav-link alert-success" role="alert"" href=#">ยินดีตอนรับ <?php if (isset($user['firstname'])) {
 																	echo $user['firstname'];
 																} ?> </a>
 					</li>
