@@ -2,7 +2,7 @@
 
 Class Database{
  
-	private $server = "mysql:host=localhost;dbname=db_loginRegister";
+	private $server = "mysql:host=localhost;dbname=db_user";
 	private $username = "root";
 	private $password = "";
 	private $options  = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,);
@@ -14,7 +14,7 @@ Class Database{
  			return $this->conn;
  		}
  		catch (PDOException $e){
- 			echo "มีปัญหาบางอย่างในการเชื่อมต่อ: " . $e->getMessage();
+ 			echo "There are some problems connecting.: " . $e->getMessage();
  		}
  
     }

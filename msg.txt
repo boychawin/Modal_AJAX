@@ -1,0 +1,18 @@
+เพิ่ม ลบ แก้ไข บน Modal ด้วย PHP + PDO and jQuery AJAX
+
+เพิ่ม ลบ แก้ไข บน Modal ของ Bootstrap 5 โดยใช้ภาษา PHP เขียนในรูปแบบ PDO ร่วมกับ jQuery AJAX โดยจะมาการดึงข้อมูลมาจากฐานข้อมูล MySQL และมีการแจ้งเตือน (Alerts) ด้วย toastr ไลบรารี 
+https://boychawin.com/blog-detail/556
+
+นําไปประยุกต์ใช้กันนะครับ
+
+รายละเอียดเครื่องมือ
+- PHP PDO
+- MySQL
+- CSS Framework Bootstrap 5
+- jQuery AJAX
+
+ขั้นตอนการติดตั้ง
+1. ดาวน์โหลดโค้ดที่ Github ลงมาไว้ที่เครื่องเรา คลิกที่นี่เพื่อดาน์โหลด
+2. ติดตั้งฐานข้อมูล .sql ที่โฟลเดอร์ db
+3. นำไฟล์โปรเจคไปไว้ในโฟลเดอร์ htdocs สำหรับคนที่ใช้ XAMPP
+4. รัน  https://localhost/ชื่อโฟลเดอร์/

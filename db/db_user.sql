@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 15, 2021 at 09:28 PM
--- Server version: 10.4.18-MariaDB
--- PHP Version: 7.3.27
+-- Generation Time: Jul 12, 2021 at 06:14 PM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_loginRegister`
+-- Database: `db_user`
 --
 
 -- --------------------------------------------------------
@@ -30,10 +30,6 @@ SET time_zone = "+00:00";
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `email` varchar(200) CHARACTER SET utf8 DEFAULT NULL,
-  `password` varchar(60) CHARACTER SET utf8 DEFAULT NULL,
-  `firstname` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
-  `lastname` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
-  `status` enum('0','1') CHARACTER SET utf8 DEFAULT NULL,
   `created_date` timestamp NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -41,9 +37,12 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `email`, `password`, `firstname`, `lastname`, `status`, `created_date`) VALUES
-(1, 'boychawin.com@gmail.com', '$2y$10$pFP9BL.Y7KVHZ4A2pPv61.4fhhsh/eqX662AnSDO77iiOf98aJzXu', 'boy', 'chawin', '1', '2021-05-15 18:55:00'),
-(2, 'boychawin.com2@gmail.com', '$2y$10$PXqoD/5WWWVr3ysWDLUzfuItvGXK1D1r0Y55ZGe6U2WVoktgENtYa', 'chawin', 'boy', '1', '2021-05-15 18:57:53');
+INSERT INTO `users` (`id`, `email`, `created_date`) VALUES
+(1, 'boychawin.com@gmail.com', '2021-07-12 16:12:15'),
+(2, 'boychawin.com2@gmail.com', '2021-07-12 16:12:45'),
+(3, 'boychawin.com3@gmail.com', '2021-07-12 16:12:51'),
+(4, 'boychawin.com4@gmail.com', '2021-07-12 16:12:59'),
+(5, 'boychawin.com5@gmail.com', '2021-07-12 16:13:09');
 
 --
 -- Indexes for dumped tables
@@ -64,7 +63,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
