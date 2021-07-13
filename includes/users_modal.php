@@ -13,12 +13,13 @@
                         <label for="email" class="col-form-label">Email</label>
                         <input type="email" class="form-control" id="email" name="email" required>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" name="bc-add" value="boychawin.com" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="submit" name="bc-add" value="boychawin.com" class="btn btn-primary">Save</button>
-            </div>
-            </form>
+
         </div>
     </div>
 </div>
